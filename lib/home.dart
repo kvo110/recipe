@@ -29,22 +29,78 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<Recipe> recipes = [
     Recipe(
-      name: '',
-      ingredients: '',
-      instructions:
-          '',
+      name: 'Double-Fried Chicken Wings',
+      ingredients: '''
+- 2 lbs (about 1 kg) chicken wings
+- 1 teaspoon salt
+- ½ teaspoon black pepper
+- 1 tablespoon garlic powder
+- 1 tablespoon soy sauce
+- 1 tablespoon rice wine (or white wine)
+- ½ cup cornstarch (or potato starch)
+- Oil for deep frying
+
+For the Sauce (optional):
+- 2 tablespoons soy sauce
+- 2 tablespoons honey
+- 1 tablespoon brown sugar
+- 1 tablespoon gochujang (Korean chili paste) or sriracha
+- 2 cloves garlic (minced)
+- 1 teaspoon sesame oil
+- 1 teaspoon rice vinegar
+''',
+      instructions: '''
+1. Wash and pat dry the wings.
+2. Marinate with salt, pepper, garlic powder, soy sauce, and rice wine for 20–30 min.
+3. Coat wings evenly in cornstarch.
+4. First fry at 325°F (160°C) for 7–8 minutes until lightly golden.
+5. Let rest for 5–10 minutes.
+6. Second fry at 375°F (190°C) for 2–3 minutes until crispy.
+7. Make sauce by simmering soy sauce, honey, brown sugar, gochujang, garlic, sesame oil, and vinegar for 3–5 minutes.
+8. Toss wings in sauce or serve with it on the side.
+9. Garnish with sesame seeds or green onions.
+'''
     ),
     Recipe(
-      name: '',
-      ingredients: '',
-      instructions:
-          '',
+      name: 'Garlic Butter Salmon',
+      ingredients: '''
+- 2 salmon fillets (about 6 oz each)
+- Salt and pepper to taste
+- 2 tablespoons olive oil
+- 3 tablespoons unsalted butter
+- 3 cloves garlic (minced)
+- 1 tablespoon lemon juice
+- 1 tablespoon chopped parsley
+- Lemon slices (for garnish)
+''',
+      instructions: '''
+1. Pat salmon dry with paper towels and season both sides with salt and pepper.
+2. Heat olive oil in a skillet over medium-high heat.
+3. Place salmon fillets skin-side down and sear for 4–5 minutes.
+4. Flip salmon and add butter, garlic, and lemon juice to the pan.
+5. Spoon the melted garlic butter over the salmon as it finishes cooking for another 2–3 minutes.
+6. Garnish with fresh parsley and lemon slices before serving.
+'''
     ),
     Recipe(
-      name: '',
-      ingredients: '',
-      instructions:
-          '',
+      name: 'Garlic Butter Steak',
+      ingredients: '''
+- 2 ribeye or sirloin steaks
+- Salt and black pepper to taste
+- 2 tablespoons olive oil
+- 3 tablespoons unsalted butter
+- 4 cloves garlic (crushed)
+- 2 sprigs fresh rosemary or thyme
+''',
+      instructions: '''
+1. Bring steaks to room temperature and pat dry.
+2. Season generously with salt and pepper on both sides.
+3. Heat olive oil in a skillet over high heat until shimmering.
+4. Sear steaks for 3–4 minutes on each side for medium-rare (adjust for doneness).
+5. Add butter, garlic, and herbs to the pan during the last minute of cooking.
+6. Spoon the melted garlic butter over the steaks as they finish.
+7. Let rest for 5 minutes before slicing and serving.
+'''
     ),
   ];
 

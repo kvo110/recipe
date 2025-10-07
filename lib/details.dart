@@ -29,7 +29,7 @@ class _DetailsState extends State<Details> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.recipe.name)),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,7 +43,7 @@ class _DetailsState extends State<Details> {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             SizedBox(height: 8),
             Text(widget.recipe.instructions, style: TextStyle(fontSize: 16)),
-            Spacer(),
+            SizedBox(height: 20),
             Center(
               child: ElevatedButton.icon(
                 onPressed: () {
@@ -62,14 +62,15 @@ class _DetailsState extends State<Details> {
                   isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: Colors.red,
                 ),
-                label: Text(
-                    isFavorite ? 'Unmark as Favorite' : 'Mark as Favorite'),
+                label:
+                    Text(isFavorite ? 'Unmark as Favorite' : 'Mark as Favorite'),
               ),
             ),
+            SizedBox(height: 20), // extra spacing at the bottom
           ],
         ),
       ),
-      // Bottom bar
+      // Bottom navigation bar
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
         child: Row(
